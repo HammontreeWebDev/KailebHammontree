@@ -1,0 +1,52 @@
+:root {
+  --accent: #ef6351;
+  --secondaryBg: #01b0d3;
+  --mainText: #ffeedb;
+  --bgColor: #003459;
+  font-family: "Comic Sans MS", "Florence", "Parkavenue", cursive;
+}
+body {
+  background-color: var(--bgColor);
+}
+
+.namePlate {
+  background-color: var(--secondaryBg);
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  border: 5px solid var(--accent);
+  border-radius: 100px;
+}
+
+.nameTitle {
+  display: flex;
+  font-size: 100px;
+  font-weight: 900;
+  height: 200px;
+  align-items: center;
+  justify-content: center;
+  color: var(--bgColor);
+  text-shadow: -1px 1px 0 var(--mainText), 1px 1px 0 var(--accent),
+    1px -1px 0 var(--accent), -1px -1px 0 var(--accent);
+  padding: 1%;
+}
+
+.big {
+  font-size: 200px;
+  text-shadow: -1px 5px 0 var(--mainText), 5px 5px 0 var(--accent),
+    1px -1px 0 var(--accent), -1px -1px 0 var(--accent);
+}
+
+#navContainer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    padding-bottom: 1%;
+}
+
+.links {
+    color: var(--mainText);
+    font-size: 20px;
+}
